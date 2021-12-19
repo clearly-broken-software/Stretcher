@@ -23,7 +23,8 @@ jobs:
         submodules: 'recursive'
 
     - name: deps
-      run: sudo apt-get install \
+      run: |
+       sudo apt-get install \
         libgl1-mesa-dev \
         libx11-dev \
         libsndfile1-dev \

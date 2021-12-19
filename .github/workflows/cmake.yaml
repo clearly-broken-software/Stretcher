@@ -49,7 +49,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: Linux artifacts
-        path: ${{runner.workspace}}/build/bin/
+        path: ${{github.workspace}}/build/bin/
     
 
       

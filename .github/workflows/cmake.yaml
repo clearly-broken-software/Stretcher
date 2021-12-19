@@ -20,7 +20,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        submodules: "recursive"
+        submodules: 'recursive'
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Stretcher-binaries
+        path: /home/runner/work/Stretcher/build/bin
+
     - name: deps
       run: sudo apt-get install libgl1-mesa-dev libx11-dev libsndfile1-dev librubberband-dev
 

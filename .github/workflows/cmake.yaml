@@ -43,7 +43,9 @@ jobs:
     - name: Display built files
       shell: bash
       working-directory: ${{github.workspace}}/build/bin
-      run: ls -lFR
+      run: 
+        pwd
+        ls -lFR
     - uses: actions/upload-artifact@v2
       with:
         name: Linux artifacts

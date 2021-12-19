@@ -44,7 +44,7 @@ jobs:
       shell: bash
       working-directory: ${{github.workspace}}/build/bin
       run: 
-        pwd
+        pwd,
         ls -lFR
     - uses: actions/upload-artifact@v2
       with:
